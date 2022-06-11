@@ -14,6 +14,8 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
     <link href="assets/css/style.css" rel="stylesheet">
 
     <title>Bright IT Limited</title>
@@ -134,161 +136,117 @@
         </section>
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <header class="section-heading">
-                    <h2>Check our latest work</h2>
-                </header>
+        <div class="container portfolio">
+            <header class="section-heading">
+                <h2>Our Portfolio</h2>
+            </header>
+            <section id="portfolio">
+                <div class="container">
 
-                <div class="row">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="portfolio-filters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-web">Web</li>
-                            <li data-filter=".filter-ui">UI/UX</li>
+                    <div class="categories">
+                        <ul>
+                            <li class="active">
+                                <a data-filter="*">All Projects</a>
+                            </li>
+                            <li>
+                                <a data-filter=".web-design">Web Design</a>
+                            </li>
+                            <li>
+                                <a data-filter=".apps">App Development</a>
+                            </li>
+                            <li>
+                                <a data-filter=".ui">UI/UX Design</a>
+                            </li>
                         </ul>
                     </div>
-                </div>
 
-                <div class="row gy-4 portfolio-container">
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio1.png" class="img-fluid" alt="bright-it">
-                            <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio1.png" data-gallery="portfolioGallery"
-                                        class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                                    <a href="" title="More Details"><i class="bi bi-link"></i></a>
+                    <div class="projects-container scrollimation in">
+                        <div class="row">
+                            <article class="col-md-4 col-sm-6 portfolio-item web-design apps ui">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio9.png" alt="">
+                                        <h2 class="project-title">Billing</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge cboxElement" href="#" title="Bills Project"><i
+                                            class="fa fa-expand fa-fw"></i></a>
+                                    <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </article>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio4.png" class="img-fluid" alt="bright-it">
-                            <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio4.png" data-gallery="portfolioGallery"
-                                        class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                                    <a href="" title="More Details"><i class="bi bi-link"></i></a>
+                            <article class="col-md-4 col-sm-6 portfolio-item apps">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio8.png" alt="">
+                                        <h2 class="project-title">Augmented Tourist</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="link centered" href=""><i class="fa fa-eye fa-fw"></i></a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </article>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio3.png" class="img-fluid" alt="bright-it">
-                            <div class="portfolio-info">
-                                <h4>App 2</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio3.png" data-gallery="portfolioGallery"
-                                        class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                                    <a href="" title="More Details"><i class="bi bi-link"></i></a>
+                            <article class="col-md-4 col-sm-6 portfolio-item web-design ui">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio7.png" alt="">
+                                        <h2 class="project-title">Get Colored</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge centered cboxElement" href="#" title="Get Colored"><i
+                                            class="fa fa-expand fa-fw"></i></a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </article>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio7.png" class="img-fluid" alt="bright-it">
-                            <div class="portfolio-info">
-                                <h4>Card 2</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio7.png" data-gallery="portfolioGallery"
-                                        class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                                    <a href="" title="More Details"><i class="bi bi-link"></i></a>
+                            <article class="col-md-4 col-sm-6 portfolio-item apps">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio6.png" alt="">
+                                        <h2 class="project-title">Holiday Selector</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge cboxElement" href="#" title="Holiday Selector"><i
+                                            class="fa fa-expand fa-fw"></i></a>
+                                    <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </article>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio5.png" class="img-fluid" alt="bright-it">
-                            <div class="portfolio-info">
-                                <h4>Web 2</h4>
-                                <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio5.png" data-gallery="portfolioGallery"
-                                        class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                                    <a href="" title="More Details"><i class="bi bi-link"></i></a>
+                            <article class="col-md-4 col-sm-6 portfolio-item web-design ui">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio5.png" alt="">
+                                        <h2 class="project-title">Scavenger Hunt</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge cboxElement" href="#" title="Scavenger Hunt"><i
+                                            class="fa fa-expand fa-fw"></i></a>
+                                    <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </article>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio2.png" class="img-fluid" alt="bright-it">
-                            <div class="portfolio-info">
-                                <h4>App 3</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio2.png" data-gallery="portfolioGallery"
-                                        class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                                    <a href="" title="More Details"><i class="bi bi-link"></i></a>
+                            <article class="col-md-4 col-sm-6 portfolio-item web-design apps">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio4.png" alt="">
+                                        <h2 class="project-title">Sonor</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge cboxElement" href="#" title="Sonor"><i
+                                            class="fa fa-expand fa-fw"></i></a>
+                                    <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio8.png" class="img-fluid" alt="bright-it">
-                            <div class="portfolio-info">
-                                <h4>Card 1</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio8.png" data-gallery="portfolioGallery"
-                                        class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                                    <a href="" title="More Details"><i class="bi bi-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio9.png" class="img-fluid" alt="bright-it">
-                            <div class="portfolio-info">
-                                <h4>Card 3</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio9.png" data-gallery="portfolioGallery"
-                                        class="portfokio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                                    <a href="" title="More Details"><i class="bi bi-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio6.png" class="img-fluid" alt="bright-it">
-                            <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio6.png" data-gallery="portfolioGallery"
-                                        class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                                    <a href="" title="More Details"><i class="bi bi-link"></i></a>
-                                </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- Newsletter section -->
         <section class="newsletter" id="newsletter">
