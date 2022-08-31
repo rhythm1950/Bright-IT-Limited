@@ -2,35 +2,602 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-    <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <title>Video Slider</title>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <title>Bright IT Limited</title>
 </head>
 
 <body>
-    <section>
-        <video id="slider" autoplay muted loop>
-            <source src="videos/vid1.mp4" type="video/mp4">
-        </video>
+    <!-- Header -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-        <ul class="navigation">
-            <li onclick="videoUrl('videos/vid1.mp4')"><img src="images/thumb1.png" alt="thumbnail"></li>
-            <li onclick="videoUrl('videos/vid2.mp4')"><img src="images/thumb2.png" alt="thumbnail"></li>
-            <li onclick="videoUrl('videos/vid3.mp4')"><img src="images/thumb3.png" alt="thumbnail"></li>
-            <li onclick="videoUrl('videos/vid4.mp4')"><img src="images/thumb4.png" alt="thumbnail"></li>
-        </ul>
+            <a href="index.html" class="logo d-flex align-items-center">
+                <span>Bright IT</span>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#clients">Clients</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+                    <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#newsletter">Newsletter</a></li>
+                    <li><a class="nav-link scrollto" href="#achievements">Achievements</a></li>
+                    <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1>We offer modern solutions for growing your business</h1>
+                    <h2>We are team of talented designers making websites with team of talented designers making
+                        Bootstrap Lorem ipsum dolor sit.</h2>
+                    <div>
+                        <div class="text-center text-lg-start">
+                            <a href="#about"
+                                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>Get Started</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hero-img"></div>
+            </div>
+        </div>
     </section>
 
-    <script type="text/javascript">
-        function videoUrl(slides) {
-            document.getElementById("slider").src = slides;
-        }
-    </script>
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <header class="section-heading">
+                <h2>Our Partners</h2>
+            </header>
+
+            <div class="clients-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid"
+                            alt="bright-it"></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid"
+                            alt="bright-it"></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid"
+                            alt="bright-it"></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid"
+                            alt="bright-it"></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid"
+                            alt="bright-it"></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid"
+                            alt="bright-it"></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid"
+                            alt="bright-it"></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid"
+                            alt="bright-it"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main">
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row gx-0">
+
+                    <div class="col-lg-6 d-flex flex-column justify-content-center">
+                        <div class="content">
+                            <h3>About Us</h3>
+                            <h2>Expedita voluptas omnis cupiditate totam, ipsum.
+                                corrupti reprehenderit.</h2>
+                            <p>
+                                Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor
+                                consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam
+                                et est corrupti.
+                            </p>
+                            <div class="text-center text-lg-start">
+                                <a href="#"
+                                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Read More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <img src="assets/img/about-image.jpg" class="img-fluid" alt="bright-it">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <div class="container portfolio">
+            <header class="section-heading">
+                <h2>Our Portfolio</h2>
+            </header>
+            <section id="portfolio">
+                <div class="container">
+
+                    <div class="categories">
+                        <ul>
+                            <li class="active">
+                                <a data-filter="*">All Projects</a>
+                            </li>
+                            <li>
+                                <a data-filter=".web-design">Web Design</a>
+                            </li>
+                            <li>
+                                <a data-filter=".apps">App Development</a>
+                            </li>
+                            <li>
+                                <a data-filter=".ui">UI/UX Design</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="projects-container scrollimation in">
+                        <div class="row">
+                            <article class="col-md-4 col-sm-6 portfolio-item web-design apps ui">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio9.png" alt="bright-it">
+                                        <h2 class="project-title">Billing</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge cboxElement" href="#" title="Bills Project"><i
+                                            class="fa fa-expand fa-fw"></i></a>
+                                    <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="col-md-4 col-sm-6 portfolio-item apps">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio8.png" alt="bright-it">
+                                        <h2 class="project-title">Augmented Tourist</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="link centered" href=""><i class="fa fa-eye fa-fw"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="col-md-4 col-sm-6 portfolio-item web-design ui">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio7.png" alt="bright-it">
+                                        <h2 class="project-title">Get Colored</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge centered cboxElement" href="#" title="Get Colored"><i
+                                            class="fa fa-expand fa-fw"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="col-md-4 col-sm-6 portfolio-item apps">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio6.png" alt="bright-it">
+                                        <h2 class="project-title">Holiday Selector</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge cboxElement" href="#" title="Holiday Selector"><i
+                                            class="fa fa-expand fa-fw"></i></a>
+                                    <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="col-md-4 col-sm-6 portfolio-item web-design ui">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio5.png" alt="bright-it">
+                                        <h2 class="project-title">Scavenger Hunt</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge cboxElement" href="#" title="Scavenger Hunt"><i
+                                            class="fa fa-expand fa-fw"></i></a>
+                                    <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="col-md-4 col-sm-6 portfolio-item web-design apps">
+                                <div class="portfolio-thumb in">
+                                    <a href="#" class="main-link">
+                                        <img class="img-responsive img-center"
+                                            src="./assets/img/portfolio/portfolio4.png" alt="bright-it">
+                                        <h2 class="project-title">Sonor</h2>
+                                        <span class="overlay-mask"></span>
+                                    </a>
+                                    <a class="enlarge cboxElement" href="#" title="Sonor"><i
+                                            class="fa fa-expand fa-fw"></i></a>
+                                    <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Newsletter section -->
+        <section class="newsletter" id="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="content">
+                            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <span class="input-group-btn">
+                                    <button class="btn" type="submit">Subscribe Now</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements section  -->
+        <section id="achievements">
+            <div class="container">
+                <div class="section-heading wow fadeIn">
+                    <h2>Our Achievements</h2>
+                    <div class="heading-separator"></div>
+                </div>
+                <div class="row">
+                    <div class="history-wrapper">
+                        <div class="title-wrap text-center one-of-two">
+                            <h2 class="h1 text-secondary mb-0 text-uppercase">Bright IT LImited</h2>
+                            <p class="fs-3 font-weight-500">Achievements</p>
+                        </div>
+
+                        <div class="timeline-box one-of-two">
+                            <img class="mb-1-6 rounded" src="./assets/img/portfolio/portfolio9.png" alt="...">
+                            <div class="content">
+                                <h3 class="h4 mb-2 mb-md-3">Start with small space</h3>
+                                <p class="mb-0">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                                    accumsan et iusto odio dignissim qui blandit praesent luptatum</p>
+                            </div>
+                            <div class="year">2018</div>
+                        </div>
+
+                        <div class="timeline-box one-of-two">
+                            <img class="mb-1-6 rounded" src="./assets/img/portfolio/portfolio8.png" alt="...">
+                            <div class="content">
+                                <h3 class="h4 mb-2 mb-md-3">Increase employee by 6 members</h3>
+                                <p class="mb-0">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                                    accumsan et iusto odio dignissim qui blandit praesent luptatum</p>
+                            </div>
+                            <div class="year">2019</div>
+                        </div>
+
+                        <div class="timeline-box one-of-two">
+                            <img class="mb-1-6 rounded" src="./assets/img/portfolio/portfolio7.png" alt="...">
+                            <div class="content">
+                                <h3 class="h4 mb-2 mb-md-3">We win the national awards</h3>
+                                <p class="mb-0">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                                    accumsan et iusto odio dignissim qui blandit praesent luptatum</p>
+                            </div>
+                            <div class="year">2020</div>
+                        </div>
+
+                        <div class="timeline-box one-of-two">
+                            <img class="mb-1-6 rounded" src="./assets/img/portfolio/portfolio5.png" alt="...">
+                            <div class="content">
+                                <h3 class="h4 mb-2 mb-md-3">Branches open in International</h3>
+                                <p class="mb-0">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                                    accumsan et iusto odio dignissim qui blandit praesent luptatum</p>
+                            </div>
+                            <div class="year">2021</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <header class="section-heading">
+                    <h2>Reviews From Clients</h2>
+                </header>
+
+                <div class="testimonials-slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                    rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                    risus at semper.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <h3>Saul Goodman</h3>
+                                    <h4>Ceo &amp; Founder</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                                    cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
+                                    legam anim culpa.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <h3>Sara Wilsson</h3>
+                                    <h4>Designer</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
+                                    minim.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <h3>Jena Karlis</h3>
+                                    <h4>Store Owner</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
+                                    dolore labore illum veniam.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <h3>Matt Brandon</h3>
+                                    <h4>Freelancer</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <h3>John Larson</h3>
+                                    <h4>Entrepreneur</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <header class="section-heading">
+                    <h2>Get In Touch</h2>
+                </header>
+
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <h3>Address</h3>
+                                    <p>Knoxville<br>
+                                        Tennessee 372487</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    <i class="bi bi-telephone"></i>
+                                    <h3>Call Us</h3>
+                                    <p>+1 3324 82846 78<br>+1 7547 83366 88</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    <i class="bi bi-envelope"></i>
+                                    <h3>Email Us</h3>
+                                    <p>info@bright.com<br>contact@bright.com</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    <i class="bi bi-clock"></i>
+                                    <h3>Open Hours</h3>
+                                    <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form action="" method="" class="php-email-form">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                        required>
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                        required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                        required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                        required></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-12 footer-info">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <span>Bright IT</span>
+                        </a>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
+                            valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                        <div class="social-links mt-3">
+                            <a href="https://shahriarrhythm.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="https://shahriarrhythm.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://shahriarrhythm.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://shahriarrhythm.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li></i> <a href="#hero">Home</a></li>
+                            <li></i> <a href="#about">About us</a></li>
+                            <li></i> <a href="#portfolio">Portfolio</a></li>
+                            <li></i> <a href="#testimonials">Testimonials</a></li>
+                            <li></i> <a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li></i> <a href="#">Web Design</a></li>
+                            <li></i> <a href="#">Web Development</a></li>
+                            <li></i> <a href="#">UI/UX Design</a></li>
+                            <li></i> <a href="#">Marketing</a></li>
+                            <li></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Knoxville <br>
+                            Tennessee 372487<br>
+                            United States <br><br>
+                            <strong>Phone:</strong> +1 3324 82846 78<br>
+                            <strong>Email:</strong> info@bright.com<br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll to top button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Jquery Files -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
