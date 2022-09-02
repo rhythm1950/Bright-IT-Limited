@@ -4,7 +4,6 @@ This is a website of an IT Agency. I have developed it using HTML, CSS, Bootstra
 ### Deployment
 | Environment | Link |
 |-------------|------|
-| Netlify Hosting | [Netlify Preview](https://lucky-rolypoly-de1dae.netlify.app/) |
 | GitHub Pages | [GitHub Pages](https://rhythm1950.github.io/Techo-Agency/) |
 
 ### Technology Stack
