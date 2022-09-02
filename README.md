@@ -26,4 +26,4 @@ This is a website of an IT Agency. I have developed it using HTML, CSS, Bootstra
 
 
 ### Website Preview:
-<img src="./assets/img/Techo-Agency.png" alt="Techo Agency">
+<img src="./assets/img/Bright-IT-Limited.png" alt="Bright IT Limited">
